@@ -1,8 +1,7 @@
 import type { ArticlePreview } from 'entities/article';
 import { Link } from 'react-router-dom';
 import { ArticlePreviewList } from 'shared/ui/ArticlePreviewList';
-import type { ProfileArticlesTab } from '../model/profile-view-model';
-import { getFollowLabel, getProfileTabsState } from '../model/ui';
+import { getFollowLabel, getProfileTabsState, type ProfileArticlesTab } from '../model';
 
 const EMPTY_BIO = 'This user has not added a bio yet.';
 

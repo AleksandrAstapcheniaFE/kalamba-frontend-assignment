@@ -1,4 +1,4 @@
-import { useArticleList } from '../model/use-article-list';
+import { useArticleList } from '../model';
 import { ArticleListView } from './article-list-view';
 
 export const ArticleList = () => {

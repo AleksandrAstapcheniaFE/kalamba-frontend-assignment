@@ -1,4 +1,4 @@
-import { useToggleFavorite } from 'features/article/list/model/use-toggle-favorite';
+import { useToggleFavorite } from 'features/article/list/model';
 import { useMemo } from 'react';
 import { DEFAULT_AVATAR } from 'shared/config/avatar';
 import { useAuth } from 'shared/lib/hooks/use-auth';

@@ -1,5 +1,8 @@
-export type { ProfileArticlesTab, ProfileViewProps } from './profile-view-model';
+export type {
+  ProfileArticlesTab,
+  ProfileViewProps,
+} from './profile-view-model';
+export { getFollowLabel, getProfileTabsState } from './ui';
 export { useProfile } from './use-profile';
 export { useProfileArticles } from './use-profile-articles';
-export { useProfileArticlesTab } from './use-profile-articles-tab';
 export { useProfilePage } from './use-profile-page';

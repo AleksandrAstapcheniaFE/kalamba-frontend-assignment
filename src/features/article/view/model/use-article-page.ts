@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { type ArticleDetail, articleQueryKeys } from 'entities/article';
-import { useToggleFavorite } from 'features/article/list/model/use-toggle-favorite';
+import { useToggleFavorite } from 'features/article/list/model';
 import { useProfile } from 'features/profile/model';
 import { useParams } from 'react-router-dom';
 import { useAuth } from 'shared/lib/hooks/use-auth';
