@@ -54,13 +54,21 @@ export default function LoginRegister() {
 
               <form>
                 <fieldset className="form-group">
-                  <input className="form-control form-control-lg" type="text" placeholder="Your Name" />
+                  <input
+                    className="form-control form-control-lg"
+                    type="text"
+                    placeholder="Your Name"
+                  />
                 </fieldset>
                 <fieldset className="form-group">
                   <input className="form-control form-control-lg" type="text" placeholder="Email" />
                 </fieldset>
                 <fieldset className="form-group">
-                  <input className="form-control form-control-lg" type="password" placeholder="Password" />
+                  <input
+                    className="form-control form-control-lg"
+                    type="password"
+                    placeholder="Password"
+                  />
                 </fieldset>
                 <button className="btn btn-lg btn-primary pull-xs-right">Sign up</button>
               </form>
@@ -75,8 +83,8 @@ export default function LoginRegister() {
             conduit
           </a>
           <span className="attribution">
-            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp; design
-            licensed under MIT.
+            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code
+            &amp; design licensed under MIT.
           </span>
         </div>
       </footer>
