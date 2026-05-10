@@ -30,9 +30,12 @@ export const Profile = () => {
   );
 };
 
-export { useProfile, useProfileArticles, useProfilePage } from './model';
-export type {
-  ProfileArticlesTab,
-  ProfileViewProps,
-} from './model/profile-view-model';
+export {
+  type ProfileArticlesTab,
+  type ProfileViewProps,
+  useProfile,
+  useProfileArticles,
+  useProfilePage,
+} from './model';
+
 export { ProfileView } from './ui/profile';

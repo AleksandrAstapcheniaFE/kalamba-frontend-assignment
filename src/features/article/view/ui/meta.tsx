@@ -8,7 +8,7 @@ import {
   getFollowDisabled,
   getFollowLabel,
   getFollowTitle,
-} from '../model/helpers-ui';
+} from '../model';
 
 export const ArticleMeta = ({
   article,

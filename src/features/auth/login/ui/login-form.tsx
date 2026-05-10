@@ -1,7 +1,7 @@
 import type { BaseSyntheticEvent } from 'react';
 import type { FieldErrors, UseFormRegister } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import type { LoginFormValues } from '../model/schema';
+import { getLoginFormUiState, type LoginFormValues } from '../model';
 
 export type LoginFormProps = {
   register: UseFormRegister<LoginFormValues>;
@@ -18,8 +18,7 @@ export const LoginForm = ({
   isSubmitting,
   serverError,
 }: LoginFormProps) => {
-  const emailInvalid = !!errors.email;
-  const passwordInvalid = !!errors.password;
+  const { emailInvalid, passwordInvalid } = getLoginFormUiState(errors);
 
   return (
     <main className="auth-page" aria-labelledby="login-title">

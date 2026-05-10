@@ -11,7 +11,7 @@ vi.mock('./api', () => ({
 }));
 
 import { loginUser } from './api';
-import { LOGIN_GENERIC_ERROR } from './model/schema';
+import { LOGIN_GENERIC_ERROR } from './model';
 
 const loginUserMock = vi.mocked(loginUser);
 

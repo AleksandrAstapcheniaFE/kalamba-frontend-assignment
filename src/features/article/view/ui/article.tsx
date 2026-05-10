@@ -1,5 +1,5 @@
 import { ErrorState, LoadingState } from 'shared/ui/states';
-import { useArticlePage } from '../model/use-article-page';
+import { useArticlePage } from '../model';
 import { ArticlePageView } from './article-page-view';
 
 export const Article = () => {

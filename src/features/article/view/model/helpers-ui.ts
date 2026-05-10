@@ -17,6 +17,7 @@ export const getFavoriteLabel = (favorited: boolean, count: number) =>
   favorited
     ? `Remove article from favorites, ${count} favorites`
     : `Add article to favorites, ${count} favorites`;
+
 export const getFollowTitle = (isOwnArticle: boolean, isAuthenticated: boolean) => {
   if (isOwnArticle) return 'You cannot follow your own profile';
   if (!isAuthenticated) return 'Sign in to follow authors';
