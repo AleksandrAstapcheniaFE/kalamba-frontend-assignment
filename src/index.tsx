@@ -1,13 +1,17 @@
-import React from 'react';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-
+import { queryClient } from 'shared/provider/queryClient';
 import App from './app/App';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
+  </StrictMode>,
   document.getElementById('root'),
 );
 

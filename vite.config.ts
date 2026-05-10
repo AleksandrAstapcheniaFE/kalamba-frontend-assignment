@@ -14,7 +14,7 @@ export default defineConfig({
       features: resolve(src, 'features'),
       shared: resolve(src, 'shared'),
       stores: resolve(src, 'stores'),
-      widget: resolve(src, 'widget'),
+      widgets: resolve(src, 'widgets'),
     },
   },
   server: {
