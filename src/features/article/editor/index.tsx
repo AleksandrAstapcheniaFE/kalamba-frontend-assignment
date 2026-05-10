@@ -1,4 +1,4 @@
-export default function Editor() {
+export const Editor = () => {
   return (
     <div className="editor-page">
       <div className="container page">
@@ -41,4 +41,4 @@ export default function Editor() {
       </div>
     </div>
   );
-}
+};
