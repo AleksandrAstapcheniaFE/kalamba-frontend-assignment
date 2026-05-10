@@ -64,19 +64,6 @@ This implementation uses a Feature-Sliced–inspired architecture to improve sca
 
 ---
 
-## Key Highlights
-
-
-- Feature-Sliced Design architecture for scalable and maintainable structure
-- Strict separation of UI, business logic, and data layers
-- Centralized API layer with Axios interceptors and typed contracts
-- React Query for server-state synchronization with cache optimization
-- Optimistic updates for smoother UX and reduced refetching
-- Persistent authentication state using Zustand middleware
-- Form validation handled via React Hook Form + Zod schema integration
-
----
-
 ## Runbook
 
 ### Install dependencies
@@ -183,9 +170,37 @@ http://localhost:8080/
 
 ---
 
+## Automated Tests
+
+| File | Purpose |
+| --- | --- |
+| `src/features/auth/login/login-flow.test.tsx` | Verifies successful and failed login flows |
+| `src/features/article/list/model/apply-favorite-to-cache.test.ts` | Verifies cache updates after favorite mutations |
+| `src/entities/article/mapper.test.ts` | Verifies API-to-view-model mapping behaviour |
+
+### Current Result
+
+```text
+Test Files  3 passed (3)
+Tests       8 passed (8)
+```
+
+---
+
+## Future Improvements
+
+- Add E2E coverage with Playwright
+- Improve accessibility coverage
+- Add request cancellation for concurrent queries
+- Introduce optimistic rollback helpers
+- Add Storybook for isolated UI development
+
+---
+
 ## Notes
 
 - The project intentionally keeps the original Conduit UI and API contract.
 - Production builds are generated into the `dist/` directory.
 - Docker image serves the application through nginx.
 - The project was implemented with a focus on scalable architecture rather than minimal assignment structure, introducing a Feature-Sliced Design approach and modern state management patterns.
+- The implementation focuses on maintainable architecture and predictable state management rather than visual redesign.
