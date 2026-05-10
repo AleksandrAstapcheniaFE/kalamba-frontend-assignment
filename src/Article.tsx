@@ -70,7 +70,10 @@ export default function Article() {
         <div className="container page">
           <div className="row article-content">
             <div className="col-md-12">
-              <p>Web development technologies have evolved at an incredible clip over the past few years.</p>
+              <p>
+                Web development technologies have evolved at an incredible clip over the past few
+                years.
+              </p>
               <h2 id="introducing-ionic">Introducing RealWorld.</h2>
               <p>It&lsquo;s a great solution for learning how other frameworks work.</p>
             </div>
@@ -115,7 +118,9 @@ export default function Article() {
 
               <div className="card">
                 <div className="card-block">
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p className="card-text">
+                    With supporting text below as a natural lead-in to additional content.
+                  </p>
                 </div>
                 <div className="card-footer">
                   <a href="/#/profile/jacobschmidt" className="comment-author">
@@ -131,7 +136,9 @@ export default function Article() {
 
               <div className="card">
                 <div className="card-block">
-                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p className="card-text">
+                    With supporting text below as a natural lead-in to additional content.
+                  </p>
                 </div>
                 <div className="card-footer">
                   <a href="/#/profile/jacobschmidt" className="comment-author">
@@ -159,8 +166,8 @@ export default function Article() {
             conduit
           </a>
           <span className="attribution">
-            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp; design
-            licensed under MIT.
+            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code
+            &amp; design licensed under MIT.
           </span>
         </div>
       </footer>

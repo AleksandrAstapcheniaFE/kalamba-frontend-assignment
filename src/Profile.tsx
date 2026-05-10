@@ -47,8 +47,8 @@ export default function Profile() {
                 <img src="http://i.imgur.com/Qr71crq.jpg" className="user-img" />
                 <h4>Eric Simons</h4>
                 <p>
-                  Cofounder @GoThinkster, lived in Aol&lsquo;s HQ for a few months, kinda looks like Peeta from the
-                  Hunger Games
+                  Cofounder @GoThinkster, lived in Aol&lsquo;s HQ for a few months, kinda looks like
+                  Peeta from the Hunger Games
                 </p>
                 <button className="btn btn-sm btn-outline-secondary action-btn">
                   <i className="ion-plus-round" />
@@ -135,8 +135,8 @@ export default function Profile() {
             conduit
           </a>
           <span className="attribution">
-            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp; design
-            licensed under MIT.
+            An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code
+            &amp; design licensed under MIT.
           </span>
         </div>
       </footer>
