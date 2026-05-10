@@ -5,9 +5,18 @@ import { defineConfig } from 'vitest/config';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const src = resolve(__dirname, 'src');
-
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      app: resolve(src, 'app'),
+      entities: resolve(src, 'entities'),
+      features: resolve(src, 'features'),
+      shared: resolve(src, 'shared'),
+      stores: resolve(src, 'stores'),
+      widget: resolve(src, 'widget'),
+    },
+  },
   server: {
     port: 3000,
   },

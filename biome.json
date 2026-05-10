@@ -46,19 +46,30 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-
+      "style": {
+        "noNonNullAssertion": "warn",
+        "useImportType": "error",
+        "useNodejsImportProtocol": "error",
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "paths": {
+              "app/*": "App layer must only be imported by the application entrypoint and should not be used as a shared dependency.",
+              "pages/*": "Pages must not be imported from other pages, widgets, features, or entities.",
+              "widgets/*": "Widgets are reusable UI blocks and should not depend on app/pages directly.",
+              "features/*": "Features should not depend on app/pages layers.",
+              "entities/*": "Entities should remain low-level and self-contained."
+            }
+          }
+        }
+      },
       "suspicious": {
         "noExplicitAny": "error",
         "noConsole": {
           "level": "warn",
-          "options": {
-            "allow": ["warn", "error"]
-          }
-        }
-      },
-
-      "style": {
-        "noNonNullAssertion": "warn"
+          "options": { "allow": ["error", "warn", "info"] }
+        },
+        "noImportCycles": "error"
       },
 
       "complexity": {
