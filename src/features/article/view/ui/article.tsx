@@ -15,6 +15,8 @@ export const Article = () => {
       isAuthenticated={vm.isAuthenticated}
       onToggleFavorite={vm.onToggleFavorite}
       article={vm.article}
+      onToggleFollow={vm.onToggleFollow}
+      isFollowLoading={vm.isFavoriteLoading}
     />
   );
 };

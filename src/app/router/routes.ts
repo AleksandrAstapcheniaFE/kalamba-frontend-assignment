@@ -42,14 +42,14 @@ export const routes: AppRoute[] = [
     path: '/settings',
     guard: 'private',
     exact: true,
-    component: lazy(() => import('../../Settings')),
+    component: lazy(() => import('../../pages/SettingsPage')),
   },
   {
     /** One route for both tabs so switching tabs does not remount the profile page. */
     path: '/profile/:username/:articlesTab?',
     guard: 'public',
     exact: true,
-    component: lazy(() => import('../../Profile')),
+    component: lazy(() => import('../../pages/ProfilePage')),
   },
   {
     path: '/:slug',
