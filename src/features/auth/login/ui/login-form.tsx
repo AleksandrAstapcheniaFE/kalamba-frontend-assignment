@@ -56,7 +56,11 @@ export const LoginForm = ({
                   <p
                     id="login-email-error"
                     role="alert"
-                    style={{ color: 'var(--danger)', fontSize: '0.875rem', marginTop: '0.25rem' }}
+                    style={{
+                      color: 'var(--danger)',
+                      fontSize: '0.875rem',
+                      marginTop: '0.25rem',
+                    }}
                   >
                     {errors.email.message}
                   </p>
@@ -78,7 +82,11 @@ export const LoginForm = ({
                   <p
                     id="login-password-error"
                     role="alert"
-                    style={{ color: 'var(--danger)', fontSize: '0.875rem', marginTop: '0.25rem' }}
+                    style={{
+                      color: 'var(--danger)',
+                      fontSize: '0.875rem',
+                      marginTop: '0.25rem',
+                    }}
                   >
                     {errors.password.message}
                   </p>

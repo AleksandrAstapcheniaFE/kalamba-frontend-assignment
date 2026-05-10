@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { type ArticleDetail, articleQueryKeys } from 'entities/article';
 import { useToggleFavorite } from 'features/article/list/model/use-toggle-favorite';
+import { useProfile } from 'features/profile/model';
 import { useParams } from 'react-router-dom';
 import { useAuth } from 'shared/lib/hooks/use-auth';
 import { getArticleDetail } from '../api';
@@ -16,6 +17,8 @@ export type ArticlePageViewModel =
       isOwnArticle: boolean;
       onToggleFavorite: (slug: string, favorited: boolean) => void;
       isFavoriteLoading: boolean;
+      onToggleFollow: (following: boolean) => void;
+      isFollowLoading: boolean;
     };
 
 /** Article page hook */
@@ -34,6 +37,9 @@ export const useArticlePage = (): ArticlePageViewModel => {
 
   const { toggleFavorite, isLoading: favoriteLoading } = useToggleFavorite();
 
+  const authorName = article?.author.username ?? '';
+  const { followMutation, requestFollow } = useProfile(authorName);
+
   if (detailQuery.isLoading) return { status: 'loading' };
   if (detailQuery.isError || !article) return { status: 'error' };
 
@@ -46,5 +52,7 @@ export const useArticlePage = (): ArticlePageViewModel => {
     isOwnArticle,
     onToggleFavorite: toggleFavorite,
     isFavoriteLoading: favoriteLoading,
+    onToggleFollow: requestFollow,
+    isFollowLoading: followMutation.isPending,
   };
 };

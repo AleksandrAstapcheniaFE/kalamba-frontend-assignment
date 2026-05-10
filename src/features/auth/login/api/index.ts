@@ -18,7 +18,7 @@ export type LoginResult = {
   token: string;
 };
 
-/** POST `/users/login` — normalized `User` plus JWT string for `authStore`. */
+/** normalized `User` plus JWT string for `authStore`. */
 export const loginUser = async (credentials: {
   email: string;
   password: string;

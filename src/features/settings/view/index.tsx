@@ -1,4 +1,4 @@
-export default function Settings() {
+export const Settings = () => {
   return (
     <div className="settings-page">
       <div className="container page">
@@ -39,7 +39,9 @@ export default function Settings() {
                     placeholder="Password"
                   />
                 </fieldset>
-                <button className="btn btn-lg btn-primary pull-xs-right">Update Settings</button>
+                <button type="submit" className="btn btn-lg btn-primary pull-xs-right">
+                  Update Settings
+                </button>
               </fieldset>
             </form>
             <hr />
@@ -51,4 +53,4 @@ export default function Settings() {
       </div>
     </div>
   );
-}
+};

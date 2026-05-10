@@ -8,6 +8,8 @@ export type ArticleViewProps = {
   isOwnArticle: boolean;
   onToggleFavorite: (slug: string, favorited: boolean) => void;
   isFavoriteLoading: boolean;
+  onToggleFollow: (following: boolean) => void;
+  isFollowLoading: boolean;
 };
 export const ArticlePageView = ({
   article,
@@ -15,6 +17,8 @@ export const ArticlePageView = ({
   isOwnArticle,
   onToggleFavorite,
   isFavoriteLoading,
+  onToggleFollow,
+  isFollowLoading,
 }: ArticleViewProps) => {
   return (
     <div className="article-page">
@@ -26,8 +30,8 @@ export const ArticlePageView = ({
             isAuthenticated={isAuthenticated}
             isOwnArticle={isOwnArticle}
             onToggleFavorite={onToggleFavorite}
-            onToggleFollow={() => {}} //TODO: need relise profile
-            isFollowLoading={false} //TODO: need relise profile
+            onToggleFollow={onToggleFollow}
+            isFollowLoading={isFollowLoading}
             isFavoriteLoading={isFavoriteLoading}
           />
         </div>
@@ -55,8 +59,8 @@ export const ArticlePageView = ({
           isAuthenticated={isAuthenticated}
           isOwnArticle={isOwnArticle}
           onToggleFavorite={onToggleFavorite}
-          onToggleFollow={() => {}} //TODO: need relise profile
-          isFollowLoading={false} //TODO: need relise profile
+          onToggleFollow={onToggleFollow}
+          isFollowLoading={isFollowLoading}
           isFavoriteLoading={isFavoriteLoading}
         />
       </div>
