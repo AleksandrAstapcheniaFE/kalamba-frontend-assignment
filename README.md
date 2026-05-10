@@ -10,7 +10,6 @@ Implementation of the Conduit / RealWorld frontend assignment with a production-
 | --- | --- |
 | UI | React 17 + TypeScript |
 | Bundler | Vite |
-| Routing | React Router v5 |
 | Server Cache | TanStack Query v4 |
 | HTTP Client | Axios |
 | Auth State | Zustand + persist middleware |
@@ -187,20 +186,11 @@ Tests       8 passed (8)
 
 ---
 
-## Future Improvements
-
-- Add E2E coverage with Playwright
-- Improve accessibility coverage
-- Add request cancellation for concurrent queries
-- Introduce optimistic rollback helpers
-- Add Storybook for isolated UI development
-
----
-
 ## Notes
 
 - The project intentionally keeps the original Conduit UI and API contract.
 - Production builds are generated into the `dist/` directory.
 - Docker image serves the application through nginx.
+- JWT tokens are stored in localStorage due to the lack of refresh token support in the provided API.
 - The project was implemented with a focus on scalable architecture rather than minimal assignment structure, introducing a Feature-Sliced Design approach and modern state management patterns.
 - The implementation focuses on maintainable architecture and predictable state management rather than visual redesign.
