@@ -13,12 +13,12 @@ export const routes: AppRoute[] = [
   {
     path: '/editor/:slug',
     guard: 'private',
-    component: lazy(() => import('../../Editor')),
+    component: lazy(() => import('../../pages/EditorPage')),
   },
   {
     path: '/editor',
     guard: 'private',
-    component: lazy(() => import('../../Editor')),
+    component: lazy(() => import('../../pages/EditorPage')),
   },
   {
     path: '/login',
@@ -55,12 +55,12 @@ export const routes: AppRoute[] = [
     path: '/:slug',
     exact: true,
     guard: 'public',
-    component: lazy(() => import('../../Article')),
+    component: lazy(() => import('../../pages/ArticlePage')),
   },
   {
     path: '/',
     exact: true,
-    component: lazy(() => import('../../ArticleList')),
+    component: lazy(() => import('../../pages/ArticleListPage')),
     guard: 'public',
   },
 ];

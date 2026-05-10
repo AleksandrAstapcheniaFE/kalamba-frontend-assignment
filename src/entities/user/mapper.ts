@@ -8,6 +8,9 @@ export type RawApiUser = {
   image: string | null;
 };
 
+/**
+ * Full user model
+ */
 export const mapApiUserToModel = (raw: RawApiUser): User => {
   return {
     email: raw.email,
