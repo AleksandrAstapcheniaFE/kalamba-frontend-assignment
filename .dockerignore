@@ -1,13 +1,28 @@
-# Ignore all files...
-*
 
-# ...except
-!@types
-!src
-!public
+# dependencies
+node_modules
+npm-debug.log
+yarn-error.log
 
+# production build output
+dist
+build
+
+# git
+.git
+.gitignore
+
+# environment
 !.env
-!nginx.conf
-!package.json
-!package-lock.json
-!tsconfig.json
+
+# editor / OS
+.vscode
+.idea
+.DS_Store
+
+# tests / coverage
+coverage
+
+# logs
+logs
+*.log
